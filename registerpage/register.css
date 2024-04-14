@@ -1,0 +1,282 @@
+#header .dropdown-container button {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+#header .form-container .input-wrapper input {
+  padding: 6px 20px;
+  background-color: #F8F8F8;
+}
+#header .form-container .category-wrapper {
+  flex: 1;
+}
+#header .form-container .category-wrapper div button {
+  padding: 10px;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  background-color: transparent !important;
+  color: black;
+  border: 0 !important;
+}
+#header .form-container .category-wrapper .search-input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: 0;
+  border-radius: 0;
+}
+#header .form-container .divider {
+  display: flex;
+  align-items: center;
+  width: 2px;
+  height: 20px;
+  background-color: rgba(1, 15, 28, 0.3019607843);
+}
+#header .dropdown {
+  position: relative;
+}
+#header .dropdown .dropdown-menu {
+  position: static;
+}
+#header .dropdown .dropdown-menu .submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -1.5rem;
+  min-width: 10rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+#header .dropdown .dropdown-menu .submenu .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  clear: both;
+  font-weight: normal;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+#header .dropdown .dropdown-menu .dropdown-item.has-submenu:hover .submenu {
+  display: block;
+}
+#header .third-header div ul li {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.registerSection {
+  background-color: #f8f8f8;
+  font-family: "Jost", sans-serif;
+  padding: 80px 0px;
+}
+.registerSection .head-text {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.registerSection .head-text h2 {
+  color: #010f1c;
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 500;
+}
+.registerSection .head-text a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #55585b;
+  font-size: 16px;
+}
+.registerSection .head-text div {
+  color: #55585b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.registerSection .head-text div i {
+  color: #55585b;
+  font-size: 4px;
+}
+.registerSection .logdiv {
+  background-color: white;
+  width: 45%;
+  margin: auto;
+  padding: 60px 0px;
+}
+@media (max-width: 767px) {
+  .registerSection .logdiv {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0px;
+  }
+}
+.registerSection .logdiv .head-log {
+  text-align: center;
+}
+.registerSection .logdiv .head-log h2 {
+  color: #010f1c;
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 500;
+}
+.registerSection .logdiv .head-log p {
+  text-decoration: none;
+  font-weight: 400;
+  color: #55585b;
+  font-size: 16px;
+}
+.registerSection .logdiv .head-log p span {
+  color: blue;
+  cursor: pointer;
+}
+.registerSection .logdiv .log-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.registerSection .logdiv .log-btns .googlebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E0E2E3;
+  height: 56px;
+  width: 252px;
+}
+.registerSection .logdiv .log-btns .googlebtn a {
+  text-decoration: none;
+  color: #010f1c;
+}
+.registerSection .logdiv .log-btns .googlebtn img {
+  height: 25px;
+  width: 25px;
+}
+.registerSection .logdiv .log-btns .facebookbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E0E2E3;
+  width: 98px;
+  height: 56px;
+}
+.registerSection .logdiv .log-btns .facebookbtn img {
+  height: 25px;
+  width: 25px;
+}
+.registerSection .logdiv .log-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 10px;
+}
+.registerSection .logdiv .log-mid hr {
+  color: black;
+  width: 30%;
+}
+.registerSection .logdiv .log-mid p {
+  margin: 0;
+}
+.registerSection .logdiv .input-grp {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  height: 50px;
+  position: relative;
+  font-size: 14px;
+  border: 1px solid #e0e2e3;
+  display: block !important;
+  padding: 5px;
+}
+.registerSection .logdiv .input-grp input {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 9px 0px;
+}
+.registerSection .logdiv .input-grp input:focus {
+  padding-left: 17px;
+  outline: none;
+}
+.registerSection .logdiv .input-grp input::placeholder {
+  padding-left: 17px;
+}
+.registerSection .logdiv .input-grp label {
+  position: absolute;
+  margin-top: -21px;
+  background-color: white;
+  padding: 4px;
+  margin-left: 15px;
+  font-size: 14px;
+  color: #010f1c;
+}
+.registerSection .logdiv .forgetpsw {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.registerSection .logdiv .checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.registerSection .logdiv .checked input {
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+}
+.registerSection .logdiv .checked input:checked {
+  transition: 0.5s;
+}
+.registerSection .logdiv .logbtn {
+  width: 80%;
+  margin: auto;
+}
+.registerSection .logdiv .logbtn input {
+  padding: 13px 30px;
+  background-color: #010f1c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.registerSection .logdiv .logbtn input:hover {
+  background-color: blue;
+  transition: 0.4s;
+}
+
+footer {
+  background-color: #F4F7F9;
+  padding: 30px 0px;
+}
+footer .social_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+footer ul {
+  padding-left: 1rem;
+}
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,355 @@
+#header {
+
+    .dropdown-container {
+        button {
+            background-color: transparent !important;
+            border: 0 !important;
+        }
+
+    }
+
+    .form-container {
+        .input-wrapper {
+            input {
+                padding: 6px 20px;
+                background-color: #F8F8F8;
+
+            }
+        }
+
+        .category-wrapper {
+            flex: 1;
+
+            div {
+                button {
+                    padding: 10px;
+                    border: 0;
+
+                    box-sizing: border-box;
+                    outline: none;
+                    background-color: transparent !important;
+                    color: black;
+                    border: 0 !important;
+                }
+
+            }
+
+            .search-input-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+                border: 0;
+                border-radius: 0;
+
+            }
+
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            width: 2px;
+            height: 20px;
+            background-color: #010f1c4d;
+        }
+
+    }
+
+    .dropdown {
+        position: relative;
+
+        .dropdown-menu {
+            position: static;
+
+            .submenu {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                margin-top: -1.5rem;
+                min-width: 10rem;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+                .dropdown-item {
+                    display: block;
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    clear: both;
+                    font-weight: normal;
+                    color: #212529;
+                    text-align: inherit;
+                    white-space: nowrap;
+                    background-color: transparent;
+                    border: 0;
+                    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+                }
+            }
+
+            .dropdown-item.has-submenu:hover .submenu {
+                display: block;
+            }
+        }
+    }
+
+    .third-header {
+        div {
+            ul {
+                li {
+                    font-weight: 500;
+                    font-size: 15px;
+                    font-family: "Work Sans", sans-serif;
+
+                }
+            }
+        }
+    }
+}
+
+
+$primary-color: #010f1c;
+$secondary-color: #55585b;
+$accent-color: blue;
+$background-color: #f8f8f8;
+$font-family: "Jost", sans-serif;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.registerSection {
+    background-color: $background-color;
+    font-family: $font-family;
+    padding: 80px 0px;
+
+    .head-text {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h2 {
+            color: $primary-color;
+            font-size: 44px;
+            line-height: 1;
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            color: $secondary-color;
+            font-size: 16px;
+        }
+
+        div {
+            color: $secondary-color;
+            @include flex-center;
+            gap: 5px;
+            font-weight: 400;
+            font-size: 16px;
+
+            i {
+                color: $secondary-color;
+                font-size: 4px;
+            }
+        }
+    }
+
+    .logdiv {
+        background-color: white;
+        width: 45%;
+        margin: auto;
+        padding: 60px 0px;
+
+        @media (max-width: 767px) {
+            background-color: white;
+            width: 100%;
+            margin: 0;
+            padding: 60px 0px;
+
+        }
+
+        .head-log {
+            text-align: center;
+
+            h2 {
+                color: $primary-color;
+                font-size: 44px;
+                line-height: 1;
+                font-weight: 500;
+            }
+
+            p {
+                text-decoration: none;
+                font-weight: 400;
+                color: $secondary-color;
+                font-size: 16px;
+
+                span {
+                    color: $accent-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // Login buttons styles
+        .log-btns {
+            @include flex-center;
+            gap: 10px;
+
+            .googlebtn {
+                @include flex-center;
+                border: 1px solid #E0E2E3;
+                height: 56px;
+                width: 252px;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-color;
+                }
+
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+
+            .facebookbtn {
+                @include flex-center;
+                border: 1px solid #E0E2E3;
+                width: 98px;
+                height: 56px;
+
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {}
+
+        // Middle login styles
+        .log-mid {
+            @include flex-center;
+            gap: 5px;
+            padding-top: 10px;
+
+            hr {
+                color: black;
+                width: 30%;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        // Input group styles
+        .input-grp {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            height: 50px;
+            position: relative;
+            font-size: 14px;
+            border: 1px solid #e0e2e3;
+            display: block !important;
+            padding: 5px;
+
+            input {
+                border: none;
+                display: block;
+                width: 100%;
+                padding: 9px 0px;
+
+                &:focus {
+                    padding-left: 17px;
+                    outline: none;
+                }
+
+                &::placeholder {
+                    padding-left: 17px;
+                }
+            }
+
+            label {
+                position: absolute;
+                margin-top: -21px;
+                background-color: white;
+                padding: 4px;
+                margin-left: 15px;
+                font-size: 14px;
+                color: $primary-color;
+            }
+        }
+
+        // Forgot password styles
+        .forgetpsw {
+            padding-top: 20px;
+            width: 80%;
+            margin: auto;
+            @include flex-center;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        // Checkbox styles
+        .checked {
+            @include flex-center;
+            gap: 10px;
+
+            input {
+                width: 20px;
+                height: 20px;
+                border-radius: 0px;
+
+                &:checked {
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        // Login button styles
+        .logbtn {
+            width: 80%;
+            margin: auto;
+
+            input {
+                padding: 13px 30px;
+                background-color: $primary-color;
+                color: white;
+                @include flex-center;
+                margin: 0 auto;
+                font-size: 16px;
+
+                &:hover {
+                    background-color: $accent-color;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #F4F7F9;
+    padding: 30px 0px;
+
+    .social_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    ul {
+        padding-left: 1rem;
+    }
+}

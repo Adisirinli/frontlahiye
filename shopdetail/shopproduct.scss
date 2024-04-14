@@ -1,0 +1,124 @@
+* {
+    font-family: "Work Sans", sans-serif;
+
+}
+
+#header {
+
+    .dropdown-container {
+        button {
+            background-color: transparent !important;
+            border: 0 !important;
+        }
+
+    }
+
+    .form-container {
+        .input-wrapper {
+            input {
+                padding: 6px 20px;
+                background-color: #F8F8F8;
+
+            }
+        }
+
+        .category-wrapper {
+            flex: 1;
+
+            div {
+                button {
+                    padding: 10px;
+                    border: 0;
+
+                    box-sizing: border-box;
+                    outline: none;
+                    background-color: transparent !important;
+                    color: black;
+                    border: 0 !important;
+                }
+
+            }
+
+            .search-input-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+                border: 0;
+                border-radius: 0;
+
+            }
+
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            width: 2px;
+            height: 20px;
+            background-color: #010f1c4d;
+        }
+
+    }
+
+    .dropdown {
+        position: relative;
+
+        .dropdown-menu {
+            position: static;
+
+            .submenu {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                margin-top: -1.5rem;
+                min-width: 10rem;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+                .dropdown-item {
+                    display: block;
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    clear: both;
+                    font-weight: normal;
+                    color: #212529;
+                    text-align: inherit;
+                    white-space: nowrap;
+                    background-color: transparent;
+                    border: 0;
+                    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+                }
+            }
+
+            .dropdown-item.has-submenu:hover .submenu {
+                display: block;
+            }
+        }
+    }
+
+    .third-header {
+        div {
+            ul {
+                li {
+                    font-weight: 500;
+                    font-size: 15px;
+                    font-family: "Work Sans", sans-serif;
+
+                }
+            }
+        }
+    }
+}
+
+#section1 {
+    .heading {
+        h3 {
+            color: #424242;
+            font-weight: 400;
+        }
+    }
+}
